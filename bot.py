@@ -6,7 +6,7 @@ from hikari.colors import Color
 import datetime as dt
 
 bot = lightbulb.BotApp(token='mytoken',
-                       default_enabled_guilds=(1038270669789610025))
+                       default_enabled_guilds=('myguild'))
 
 
 @bot.listen(hikari.StartedEvent)
