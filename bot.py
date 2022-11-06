@@ -5,7 +5,7 @@ import requests
 from hikari.colors import Color
 import datetime as dt
 
-bot = lightbulb.BotApp(token='MTAzODI3MzYwODQ2NTc3NjY5MA.GlA19h.li0vVV6FSE7XkYKDvvcZ_BQkj3i5MWAA3if380',
+bot = lightbulb.BotApp(token='mytoken',
                        default_enabled_guilds=(1038270669789610025))
 
 
