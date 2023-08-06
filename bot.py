@@ -107,5 +107,13 @@ async def command_cat(ctx: lightbulb.SlashContext) -> None:
     koala_fact = fact_url.json()
     await ctx.respond(koala_fact)
 
+@bot.command
+@lightbulb.command('joke', 'Tell a random joke')
+@lightbulb.implements(lightbulb.SlashCommand)
+async def tell_joke(ctx):
+    joke_url = requests.get("https://official-joke-api.appspot.com/random_joke")
+    joke_data = joke_url.json()
+    await ctx.respond(f"{joke_data['setup']}\n{joke_data['punchline']}")
+
 
 bot.run()
